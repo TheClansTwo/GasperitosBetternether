@@ -2,16 +2,16 @@
   "_fv": 33,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Necron",
-    "mobLabel": "§4Necron",
+    "mobName": "gasps",
+    "mobLabel": "",
     "mobModelName": "Biped",
-    "mobModelTexture": "necron.png",
+    "mobModelTexture": "meliodas_demon.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
-    "hasSpawnEgg": false,
+    "hasSpawnEgg": true,
     "spawnEggBaseColor": {
       "value": -11206656,
       "falpha": 0.0
@@ -27,33 +27,33 @@
     "bossBarColor": "RED",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": ""
+      "value": "CUSTOM:Giantsword"
     },
     "equipmentOffHand": {
       "value": ""
     },
     "equipmentHelmet": {
-      "value": ""
+      "value": "CUSTOM:Wardenhelmet.helmet"
     },
     "equipmentBody": {
-      "value": ""
+      "value": "CUSTOM:Necronarmor.body"
     },
     "equipmentLeggings": {
-      "value": ""
+      "value": "CUSTOM:Necronarmor.legs"
     },
     "equipmentBoots": {
-      "value": ""
+      "value": "CUSTOM:Necronarmor.boots"
     },
     "mobBehaviourType": "Mob",
-    "mobCreatureType": "UNDEAD",
-    "attackStrength": 20,
-    "attackKnockback": 0.0,
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 10,
+    "attackKnockback": 3.0,
     "knockbackResistance": 1000.0,
-    "movementSpeed": 0.4,
-    "armorBaseValue": 35.0,
+    "movementSpeed": 0.3,
+    "armorBaseValue": 5.0,
     "trackingRange": 64,
     "followRange": 32,
-    "health": 350,
+    "health": 250,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
@@ -65,34 +65,34 @@
     "canControlForward": false,
     "canControlStrafe": false,
     "immuneToFire": true,
-    "immuneToArrows": false,
-    "immuneToFallDamage": false,
-    "immuneToCactus": false,
-    "immuneToDrowning": false,
+    "immuneToArrows": true,
+    "immuneToFallDamage": true,
+    "immuneToCactus": true,
+    "immuneToDrowning": true,
     "immuneToLightning": true,
-    "immuneToPotions": false,
+    "immuneToPotions": true,
     "immuneToPlayer": false,
-    "immuneToExplosion": false,
-    "immuneToTrident": false,
-    "immuneToAnvil": false,
+    "immuneToExplosion": true,
+    "immuneToTrident": true,
+    "immuneToAnvil": true,
     "immuneToWither": true,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:Gaspsheart"
     },
     "livingSound": {
-      "value": "entity.wither.ambient"
+      "value": ""
     },
     "hurtSound": {
-      "value": "entity.wither.hurt"
+      "value": ""
     },
     "deathSound": {
-      "value": "entity.wither.death"
+      "value": ""
     },
     "stepSound": {
-      "value": "block.iron_trapdoor.open"
+      "value": ""
     },
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
       "value": "SMALL_FLAME"
     },
@@ -101,7 +101,7 @@
     "particleAmount": 6,
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"88\" y=\"68\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],

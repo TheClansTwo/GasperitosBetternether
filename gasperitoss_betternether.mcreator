@@ -61,19 +61,55 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "necron"
+    },
+    {
+      "name": "Necronarmor",
+      "type": "armor",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "necronarmor",
+      "metadata": {
+        "eh": false,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Giantsword",
+      "type": "tool",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "giantsword"
+    },
+    {
+      "name": "Gaspsheart",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gaspsheart"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.gasperitoss_betternether.wardenhelmet_chestplate": "Wardenhelmet Body",
-      "item.gasperitoss_betternether.gasps_alloy": "Gasps\u0027s Alloy",
-      "item.gasperitoss_betternether.necron_spawn_egg": "Necron Spawn Egg",
       "item.gasperitoss_betternether.wardenhelmet_boots": "Wardenhelmet Boots",
-      "entity.gasperitoss_betternether.necron": "Necron",
+      "item.gasperitoss_betternether.gaspsheart": "Gaspsheart",
       "item.gasperitoss_betternether.wardenhelmet_leggings": "Wardenhelmet Leggings",
+      "item.gasperitoss_betternether.giantsword": "Giantsword",
       "item.gasperitoss_betternether.wardenhelmet_helmet": "Warden helmet",
+      "item.gasperitoss_betternether.necronarmor_leggings": "Necron\u0027s Leggings",
+      "item.gasperitoss_betternether.wardenhelmet_chestplate": "Wardenhelmet Body",
+      "item.gasperitoss_betternether.necronarmor_helmet": "Necronarmor Helmet",
+      "item.gasperitoss_betternether.gasps_alloy": "Gasps\u0027s Alloy",
+      "item.gasperitoss_betternether.necronarmor_boots": "Necron\u0027s Boots",
+      "item.gasperitoss_betternether.necron_spawn_egg": "gasps Spawn Egg",
+      "entity.gasperitoss_betternether.necron": "gasps",
+      "item.gasperitoss_betternether.necronarmor_chestplate": "Necron\u0027s chestplate",
       "item.gasperitoss_betternether.gaspsteel": "Gaspsteel"
     }
   },

@@ -18,6 +18,6 @@ public class NecronRenderer extends HumanoidMobRenderer<NecronEntity, HumanoidMo
 
 	@Override
 	public ResourceLocation getTextureLocation(NecronEntity entity) {
-		return new ResourceLocation("gasperitoss_betternether:textures/entities/necron.png");
+		return new ResourceLocation("gasperitoss_betternether:textures/entities/meliodas_demon.png");
 	}
 }
