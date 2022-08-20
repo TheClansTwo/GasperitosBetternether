@@ -1,0 +1,92 @@
+{
+  "mod_elements": [
+    {
+      "name": "GaspsAlloy",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gasps_alloy"
+    },
+    {
+      "name": "Gaspsteel",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gaspsteel"
+    },
+    {
+      "name": "Gaspsteelcrafting",
+      "type": "recipe",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gaspsteelcrafting"
+    },
+    {
+      "name": "Gaspsalloyrecepie",
+      "type": "recipe",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gaspsalloyrecepie"
+    },
+    {
+      "name": "Wardenhelmet",
+      "type": "armor",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wardenhelmet",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "Wardenhelmrecepie",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wardenhelmrecepie"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.gasperitoss_betternether.wardenhelmet_chestplate": "Wardenhelmet Body",
+      "item.gasperitoss_betternether.gasps_alloy": "Gasps\u0027s Alloy",
+      "item.gasperitoss_betternether.wardenhelmet_boots": "Wardenhelmet Boots",
+      "item.gasperitoss_betternether.wardenhelmet_leggings": "Wardenhelmet Leggings",
+      "item.gasperitoss_betternether.wardenhelmet_helmet": "Warden helmet",
+      "item.gasperitoss_betternether.gaspsteel": "Gaspsteel"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "gasperitoss_betternether",
+    "modName": "gasperitos\u0027s betternether",
+    "version": "1.0.0",
+    "author": "tomma, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.19.1",
+    "modElementsPackage": "net.mcreator.gasperitossbetternether",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200234517
+}

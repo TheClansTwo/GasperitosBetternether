@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "addition": {
+    "item": "gasperitoss_betternether:gaspsteel"
+  },
+  "result": {
+    "item": "gasperitoss_betternether:gasps_alloy"
+  }
+}

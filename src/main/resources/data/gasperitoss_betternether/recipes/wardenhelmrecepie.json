@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "gasperitoss_betternether:gasps_alloy"
+    },
+    "1": {
+      "item": "minecraft:bedrock"
+    },
+    "2": {
+      "item": "gasperitoss_betternether:gasps_alloy"
+    },
+    "3": {
+      "item": "gasperitoss_betternether:gasps_alloy"
+    },
+    "5": {
+      "item": "gasperitoss_betternether:gasps_alloy"
+    }
+  },
+  "result": {
+    "item": "gasperitoss_betternether:wardenhelmet_helmet",
+    "count": 1
+  }
+}
