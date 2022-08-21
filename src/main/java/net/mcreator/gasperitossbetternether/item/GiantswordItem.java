@@ -4,14 +4,17 @@ package net.mcreator.gasperitossbetternether.item;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
+
+import net.mcreator.gasperitossbetternether.init.GasperitossBetternetherModItems;
 
 public class GiantswordItem extends SwordItem {
 	public GiantswordItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 100000;
+				return 3000;
 			}
 
 			public float getSpeed() {
@@ -19,7 +22,7 @@ public class GiantswordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 13f;
+				return 14f;
 			}
 
 			public int getLevel() {
@@ -27,12 +30,12 @@ public class GiantswordItem extends SwordItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 2;
+				return 30;
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of(new ItemStack(GasperitossBetternetherModItems.GIANTSWORD));
 			}
-		}, 3, -3f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
+		}, 3, -3.1f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
 	}
 }

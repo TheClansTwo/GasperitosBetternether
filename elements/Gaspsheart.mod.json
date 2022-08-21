@@ -5,8 +5,8 @@
     "renderType": 0,
     "texture": "warden_heart",
     "customModelName": "Normal",
-    "name": "Gaspsheart",
-    "rarity": "COMMON",
+    "name": "Warden Heart",
+    "rarity": "EPIC",
     "creativeTab": {
       "value": "MISC"
     },

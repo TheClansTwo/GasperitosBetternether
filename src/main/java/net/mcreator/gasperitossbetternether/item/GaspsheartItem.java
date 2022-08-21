@@ -8,7 +8,7 @@ import net.minecraft.world.item.CreativeModeTab;
 
 public class GaspsheartItem extends Item {
 	public GaspsheartItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1).fireResistant().rarity(Rarity.EPIC));
 	}
 
 	@Override

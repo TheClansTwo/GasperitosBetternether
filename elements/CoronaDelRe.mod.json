@@ -2,22 +2,22 @@
   "_fv": 33,
   "_type": "armor",
   "definition": {
-    "enableHelmet": false,
-    "textureHelmet": "",
-    "enableBody": true,
-    "textureBody": "necron_chestplate",
-    "enableLeggings": true,
-    "textureLeggings": "necron_leggings",
-    "enableBoots": true,
-    "textureBoots": "necron_boots",
+    "enableHelmet": true,
+    "textureHelmet": "kingcrown",
+    "enableBody": false,
+    "textureBody": "",
+    "enableLeggings": false,
+    "textureLeggings": "",
+    "enableBoots": false,
+    "textureBoots": "",
     "creativeTab": {
       "value": "COMBAT"
     },
-    "armorTextureFile": "necron_",
-    "helmetName": "Necronarmor Helmet",
-    "bodyName": "Necron's chestplate",
-    "leggingsName": "Necron's Leggings",
-    "bootsName": "Necron's Boots",
+    "armorTextureFile": "kingcrown_",
+    "helmetName": "Corona Del Re Del Mondo",
+    "bodyName": "Corona Del Re Body",
+    "leggingsName": "Corona Del Re Leggings",
+    "bootsName": "Corona Del Re Boots",
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],
@@ -42,17 +42,21 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
-    "maxDamage": 30,
-    "damageValueHelmet": 0,
-    "damageValueBody": 9,
-    "damageValueLeggings": 6,
-    "damageValueBoots": 6,
-    "enchantability": 9,
-    "toughness": 2.0,
+    "maxDamage": 25,
+    "damageValueHelmet": 6,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 40,
+    "toughness": 4.5,
     "knockbackResistance": 0.0,
     "equipSound": {
-      "value": "item.armor.equip_netherite"
+      "value": "block.enchantment_table.use"
     },
-    "repairItems": []
+    "repairItems": [
+      {
+        "value": "CUSTOM:CoronaDelRe.helmet"
+      }
+    ]
   }
 }

@@ -2,10 +2,10 @@
   "_fv": 33,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Necron",
-    "mobLabel": "Necron",
+    "mobName": "Gasps",
+    "mobLabel": "Gasps",
     "mobModelName": "Biped",
-    "mobModelTexture": "necron.png",
+    "mobModelTexture": "d86e3607e55d82e3.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -24,7 +24,7 @@
       "value": "MISC"
     },
     "isBoss": true,
-    "bossBarColor": "RED",
+    "bossBarColor": "YELLOW",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
       "value": ""
@@ -45,15 +45,15 @@
       "value": ""
     },
     "mobBehaviourType": "Mob",
-    "mobCreatureType": "UNDEAD",
-    "attackStrength": 20,
-    "attackKnockback": 0.0,
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 10,
+    "attackKnockback": 1.0,
     "knockbackResistance": 1000.0,
-    "movementSpeed": 0.35,
-    "armorBaseValue": 15.0,
+    "movementSpeed": 0.6,
+    "armorBaseValue": 10.0,
     "trackingRange": 64,
     "followRange": 32,
-    "health": 250,
+    "health": 100,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
@@ -66,31 +66,31 @@
     "canControlStrafe": false,
     "immuneToFire": true,
     "immuneToArrows": false,
-    "immuneToFallDamage": false,
+    "immuneToFallDamage": true,
     "immuneToCactus": false,
     "immuneToDrowning": false,
-    "immuneToLightning": true,
+    "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
-    "immuneToExplosion": true,
+    "immuneToExplosion": false,
     "immuneToTrident": false,
     "immuneToAnvil": false,
-    "immuneToWither": true,
+    "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
       "value": ""
     },
     "livingSound": {
-      "value": "entity.wither.ambient"
+      "value": ""
     },
     "hurtSound": {
-      "value": "entity.wither.hurt"
+      "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "entity.wither.death"
+      "value": "entity.generic.death"
     },
     "stepSound": {
-      "value": "entity.irongolem.step"
+      "value": ""
     },
     "spawnParticles": false,
     "particleToSpawn": {

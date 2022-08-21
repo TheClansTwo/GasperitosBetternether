@@ -16,6 +16,7 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
 import net.mcreator.gasperitossbetternether.init.GasperitossBetternetherModItems;
+import net.mcreator.gasperitossbetternether.init.GasperitossBetternetherModFeatures;
 import net.mcreator.gasperitossbetternether.init.GasperitossBetternetherModEntities;
 
 import net.fabricmc.api.ModInitializer;
@@ -31,6 +32,8 @@ public class GasperitossBetternetherMod implements ModInitializer {
 		GasperitossBetternetherModEntities.load();
 
 		GasperitossBetternetherModItems.load();
+
+		GasperitossBetternetherModFeatures.load();
 
 	}
 }

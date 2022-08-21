@@ -7,17 +7,17 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.model.HumanoidModel;
 
-import net.mcreator.gasperitossbetternether.entity.NecronEntity;
+import net.mcreator.gasperitossbetternether.entity.GaspsEntity;
 
-public class NecronRenderer extends HumanoidMobRenderer<NecronEntity, HumanoidModel<NecronEntity>> {
-	public NecronRenderer(EntityRendererProvider.Context context) {
+public class GaspsRenderer extends HumanoidMobRenderer<GaspsEntity, HumanoidModel<GaspsEntity>> {
+	public GaspsRenderer(EntityRendererProvider.Context context) {
 		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
 		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)),
 				new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR))));
 	}
 
 	@Override
-	public ResourceLocation getTextureLocation(NecronEntity entity) {
-		return new ResourceLocation("gasperitoss_betternether:textures/entities/necron.png");
+	public ResourceLocation getTextureLocation(GaspsEntity entity) {
+		return new ResourceLocation("gasperitoss_betternether:textures/entities/d86e3607e55d82e3.png");
 	}
 }

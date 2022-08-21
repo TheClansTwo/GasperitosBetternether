@@ -2,6 +2,7 @@
 package net.mcreator.gasperitossbetternether.item;
 
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ArmorMaterial;
@@ -9,6 +10,8 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+
+import net.mcreator.gasperitossbetternether.init.GasperitossBetternetherModItems;
 
 import net.fabricmc.api.Environment;
 import net.fabricmc.api.EnvType;
@@ -23,12 +26,12 @@ public abstract class WardenhelmetItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForSlot(EquipmentSlot slot) {
-				return new int[]{2, 5, 6, 3}[slot.getIndex()];
+				return new int[]{2, 5, 6, 5}[slot.getIndex()];
 			}
 
 			@Override
 			public int getEnchantmentValue() {
-				return 17;
+				return 25;
 			}
 
 			@Override
@@ -38,7 +41,8 @@ public abstract class WardenhelmetItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of(new ItemStack(GasperitossBetternetherModItems.WARDENHELMET_HELMET),
+						new ItemStack(GasperitossBetternetherModItems.GASPS_ALLOY));
 			}
 
 			@Environment(EnvType.CLIENT)
@@ -54,7 +58,7 @@ public abstract class WardenhelmetItem extends ArmorItem {
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0.2f;
+				return 0.3f;
 			}
 		}, slot, properties);
 	}

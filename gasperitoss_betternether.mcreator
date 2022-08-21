@@ -55,28 +55,6 @@
       "registry_name": "wardenhelmrecepie"
     },
     {
-      "name": "Necron",
-      "type": "livingentity",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "necron"
-    },
-    {
-      "name": "Necronarmor",
-      "type": "armor",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "necronarmor",
-      "metadata": {
-        "eh": false,
-        "el": true,
-        "eb": true,
-        "ec": true
-      }
-    },
-    {
       "name": "Giantsword",
       "type": "tool",
       "sortid": 9,
@@ -91,25 +69,99 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "gaspsheart"
+    },
+    {
+      "name": "Necronloot",
+      "type": "loottable",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "necronloot"
+    },
+    {
+      "name": "Gasps",
+      "type": "livingentity",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gasps"
+    },
+    {
+      "name": "DemonGasps",
+      "type": "livingentity",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_gasps"
+    },
+    {
+      "name": "CoronaDelRe",
+      "type": "armor",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corona_del_re",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "Gaspsloot",
+      "type": "loottable",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gaspsloot"
+    },
+    {
+      "name": "Demongaspsloot",
+      "type": "loottable",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demongaspsloot"
+    },
+    {
+      "name": "Necron",
+      "type": "livingentity",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "necron"
+    },
+    {
+      "name": "Arena",
+      "type": "structure",
+      "sortid": 19,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "arena"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "entity.gasperitoss_betternether.demon_gasps": "Demon Gasps",
+      "item.gasperitoss_betternether.corona_del_re_helmet": "Corona Del Re Del Mondo",
       "item.gasperitoss_betternether.wardenhelmet_boots": "Wardenhelmet Boots",
-      "item.gasperitoss_betternether.gaspsheart": "Gaspsheart",
+      "item.gasperitoss_betternether.gaspsheart": "Warden Heart",
       "item.gasperitoss_betternether.wardenhelmet_leggings": "Wardenhelmet Leggings",
-      "item.gasperitoss_betternether.giantsword": "Giantsword",
+      "item.gasperitoss_betternether.giantsword": "Giant\u0027s sword",
       "item.gasperitoss_betternether.wardenhelmet_helmet": "Warden helmet",
-      "item.gasperitoss_betternether.necronarmor_leggings": "Necron\u0027s Leggings",
+      "item.gasperitoss_betternether.corona_del_re_leggings": "Corona Del Re Leggings",
+      "item.gasperitoss_betternether.demon_gasps_spawn_egg": "Demon Gasps Spawn Egg",
       "item.gasperitoss_betternether.wardenhelmet_chestplate": "Wardenhelmet Body",
-      "item.gasperitoss_betternether.necronarmor_helmet": "Necronarmor Helmet",
+      "entity.gasperitoss_betternether.gasps": "Gasps",
       "item.gasperitoss_betternether.gasps_alloy": "Gasps\u0027s Alloy",
-      "item.gasperitoss_betternether.necronarmor_boots": "Necron\u0027s Boots",
-      "item.gasperitoss_betternether.necron_spawn_egg": "gasps Spawn Egg",
-      "entity.gasperitoss_betternether.necron": "gasps",
-      "item.gasperitoss_betternether.necronarmor_chestplate": "Necron\u0027s chestplate",
+      "item.gasperitoss_betternether.corona_del_re_boots": "Corona Del Re Boots",
+      "item.gasperitoss_betternether.necron_spawn_egg": "Necron Spawn Egg",
+      "item.gasperitoss_betternether.gasps_spawn_egg": "Gasps Spawn Egg",
+      "entity.gasperitoss_betternether.necron": "Necron",
+      "item.gasperitoss_betternether.corona_del_re_chestplate": "Corona Del Re Body",
       "item.gasperitoss_betternether.gaspsteel": "Gaspsteel"
     }
   },

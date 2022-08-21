@@ -1,7 +1,6 @@
 
 package net.mcreator.gasperitossbetternether.entity;
 
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
@@ -21,17 +20,16 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.BlockPos;
 
-public class NecronEntity extends Monster {
-	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.RED,
+public class DemonGaspsEntity extends Monster {
+	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.PURPLE,
 			ServerBossEvent.BossBarOverlay.PROGRESS);
 
-	public NecronEntity(EntityType<NecronEntity> type, Level world) {
+	public DemonGaspsEntity(EntityType<DemonGaspsEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-		setCustomName(Component.literal("Necron"));
+		setCustomName(Component.literal("Demon Gasps"));
 		setCustomNameVisible(true);
 		setPersistenceRequired();
 	}
@@ -53,7 +51,7 @@ public class NecronEntity extends Monster {
 
 	@Override
 	public MobType getMobType() {
-		return MobType.UNDEAD;
+		return MobType.UNDEFINED;
 	}
 
 	@Override
@@ -62,30 +60,18 @@ public class NecronEntity extends Monster {
 	}
 
 	@Override
-	public SoundEvent getAmbientSound() {
-		return new SoundEvent(new ResourceLocation("entity.wither.ambient"));
-	}
-
-	@Override
-	public void playStepSound(BlockPos pos, BlockState blockIn) {
-		this.playSound(new SoundEvent(new ResourceLocation("entity.iron_golem.step")), 0.15f, 1);
-	}
-
-	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return new SoundEvent(new ResourceLocation("entity.wither.hurt"));
+		return new SoundEvent(new ResourceLocation("entity.generic.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return new SoundEvent(new ResourceLocation("entity.wither.death"));
+		return new SoundEvent(new ResourceLocation("entity.generic.death"));
 	}
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
-		if (source == DamageSource.LIGHTNING_BOLT)
-			return false;
-		if (source.isExplosion())
+		if (source == DamageSource.FALL)
 			return false;
 		if (source == DamageSource.WITHER)
 			return false;
@@ -122,12 +108,13 @@ public class NecronEntity extends Monster {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.35);
-		builder = builder.add(Attributes.MAX_HEALTH, 250);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.7);
+		builder = builder.add(Attributes.MAX_HEALTH, 150);
 		builder = builder.add(Attributes.ARMOR, 15);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 20);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 15);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 1000);
+		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 2);
 		return builder;
 	}
 }
